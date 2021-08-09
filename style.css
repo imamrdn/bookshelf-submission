@@ -1,0 +1,162 @@
+*   {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+main    {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, rgba(222,186,157,1) 0%, rgba(158,119,119,1) 50%, rgba(111,76,91,1) 100%);
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.308);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.head_bar   {
+    width: 100%;
+    font-style: italic;
+    position: absolute;
+    padding: 20px;
+}
+
+.input_page{
+    float: right;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search_section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.search_section > #searchBook > input[type=text]  {
+    width: 77%;
+}
+
+.input_section  {
+    padding: 30px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    padding: 10 0px;
+}
+
+label   {
+    font-size: 18px;
+}
+
+input[type=text]    {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.527);
+    outline: none;
+}
+
+.input{
+    margin: 4px 0;
+}
+
+button[type=submit]  {
+    background-color: #6F4C5B;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+  
+.output_page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 700px 0 200px;
+    width: 100%;
+}
+
+.output_page > .book_shelf {
+    border: none;
+    outline: none;
+    margin: 10px;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.output_page > .book_shelf > .book_list  {
+    margin: 20px;
+    padding: 10px 0;
+}
+
+.output_page > .book_shelf > .book_list > .book_item  {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.247);box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    margin: 10px 5px 0 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.green {
+    background-color: #369c6e;
+}
+
+.red  {
+    background-color: #D54C4C;
+}
+
+.blue   {
+    background-color: #035297d3;
+}
+
+
+
+@media screen and (max-width: 1000px)   {
+    .input_page   {
+        width: 85%;
+        padding-top: 150px;
+    }
+
+    .search_section > #searchBook > input[type=text]  {
+        width: 73%;
+    }
+
+    .output_page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .output_page > .book_shelf {
+        width: 85%;
+    }
+
+}
